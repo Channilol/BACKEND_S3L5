@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TemplateBase.master.cs" Inherits="eCommerceEpicode.MasteryPages.TemplateBase" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../Styles/style.css" rel="stylesheet" />
+    <title>eCommerce Epicode</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <h1><a href='/Home.aspx'>eCommerce EPICODE</a></h1>
+        <a href="/CartPage.aspx">
+            <img src="../Images/icons8-cart-96.png" />
+            Carrello
+            <asp:Label ID="numCart" runat="server" Text="" AutoPostBack="true"></asp:Label>
+        </a>
+    </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+        </asp:ContentPlaceHolder>
+    <footer>
+        <p>&copy 2024 Francesco Cannizzo - EPICODE Backend Esercizio S3L5 eCommerce</p>
+    </footer>
+</body>
+</html>
